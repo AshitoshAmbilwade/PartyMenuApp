@@ -5,14 +5,14 @@ import dishes from '../data/dishes.json';
 import DishCard from '../components/DishCard';
 import CategoryTabs from '../components/Header/CategoryTabs';
 import SubHeadingFilter from '../components/Header/SubHeadingFilter';
-import SearchBar from '../components/Header/SearchBar'; // ✅ Import SearchBar
+import SearchBar from '../components/Header/SearchBar';
 
 export default function DishList() {
   const [selected, setSelected] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('Starter');
   const [showVeg, setShowVeg] = useState(true);
   const [showNonVeg, setShowNonVeg] = useState(true);
-  const [searchQuery, setSearchQuery] = useState(''); // ✅ Add state
+  const [searchQuery, setSearchQuery] = useState('');
 
   const toggleSelect = (id) => {
     setSelected((prev) =>
@@ -20,20 +20,30 @@ export default function DishList() {
     );
   };
 
-  // Step 1: Filter by category
+  // Get selected dish objects
+  const selectedDishes = dishes.filter((dish) => selected.includes(dish.id));
+
+  // Count selected per category
+  const selectedCountMap = selectedDishes.reduce((acc, dish) => {
+    const cat = dish.category || 'Other';
+    acc[cat] = (acc[cat] || 0) + 1;
+    return acc;
+  }, {});
+
+  // Filter by category
   let filteredDishes =
     selectedCategory === 'All'
       ? dishes
       : dishes.filter((dish) => dish.category === selectedCategory);
 
-  // Step 2: Filter by type
+  // Filter by type
   filteredDishes = filteredDishes.filter((dish) => {
     if (dish.type?.toLowerCase() === 'veg' && !showVeg) return false;
     if (dish.type?.toLowerCase() === 'non-veg' && !showNonVeg) return false;
     return true;
   });
 
-  // ✅ Step 3: Filter by search query
+  // Filter by search
   filteredDishes = filteredDishes.filter((dish) =>
     dish.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -42,13 +52,14 @@ export default function DishList() {
     <div className="pb-28 px-4">
       <h1 className="text-2xl font-bold mt-4">Party Menu</h1>
 
-      {/* ✅ Search Input */}
+      {/* Search Bar */}
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
 
-      {/* Category Tabs */}
+      {/* Category Tabs with selectedCountMap */}
       <CategoryTabs
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
+        selectedCountMap={selectedCountMap}
       />
 
       {/* Veg/Non-Veg Filter */}
@@ -61,7 +72,7 @@ export default function DishList() {
         setShowNonVeg={setShowNonVeg}
       />
 
-      {/* Filtered Dish Cards */}
+      {/* Filtered Dishes */}
       {filteredDishes.length === 0 ? (
         <p className="text-gray-600 mt-4">No dishes in this category.</p>
       ) : (

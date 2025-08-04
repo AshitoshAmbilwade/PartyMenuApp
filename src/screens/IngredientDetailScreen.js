@@ -2,30 +2,52 @@
 import '../../global.css';
 
 export default function IngredientDetailScreen({ route }) {
-  const { dish } = route.params;
+  const { dish } = route.params || {
+    dish: {
+      name: 'Fried Avocado Tacos',
+      description:
+        'Panco fried avocado, Mayo, Panco fried avocado, Mayo, Panco fried avocado, Mayo.',
+      image: 'https://your-image-url.com/image.jpg',
+      serves: 2, 
+      ingredients: [
+        { name: 'Cauliflower', quantity: '01 Pc' },
+        { name: 'Mustard oil', quantity: '1/2 litres' },
+        { name: 'Cauliflower', quantity: '01 Pc' },
+        { name: 'Tomato', quantity: '01 Pc' },
+      ],
+    },
+  };
 
   return (
-    <div className="p-5 bg-white min-h-screen">
-      {/* Dish Image */}
-      <div className="mb-4">
+    <div className="p-4 bg-white min-h-screen text-sm font-medium">
+      {/* Dish Header */}
+      <div className="flex items-center mb-4">
+        <div className="flex-1">
+          <h1 className="text-xl font-bold leading-tight">{dish.name}</h1>
+          <p className="text-gray-500 line-clamp-2">{dish.description}</p>
+        </div>
         <img
           src={dish.image}
           alt={dish.name}
-          className="w-full h-64 object-cover rounded-lg shadow-md"
+          className="w-24 h-24 rounded-full object-cover ml-4"
         />
       </div>
 
-      {/* Dish Title */}
-      <h1 className="text-2xl font-bold mb-1">{dish.name}</h1>
+      {/* Section Title */}
+      <h2 className="text-base font-semibold mt-6 mb-1">Ingredients</h2>
+       <p className="text-gray-500 mb-3">For {dish.serves} {dish.serves === 1 ? 'person' : 'people'}</p>
 
-      {/* Description */}
-      <p className="text-gray-600 mb-4">{dish.description}</p>
 
-      {/* Ingredient List */}
-      <h2 className="text-lg font-semibold mb-2">Ingredients</h2>
-      <div className="bg-gray-100 p-4 rounded-md">
-        {dish.ingredients.map((ingredient, idx) => (
-          <p key={idx} className="text-gray-800 mb-1">• {ingredient}</p>
+      {/* Ingredients Table */}
+      <div className="border-t border-gray-200">
+        {dish.ingredients.map((item, index) => (
+          <div
+            key={index}
+            className="flex justify-between py-2 border-b border-gray-100"
+          >
+            <span className="text-gray-800">{item.name}</span>
+            <span className="text-gray-600">{item.quantity}</span>
+          </div>
         ))}
       </div>
     </div>

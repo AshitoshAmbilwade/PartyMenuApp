@@ -5,8 +5,66 @@
     "type": "non-veg",
     "description": "Tandoori chicken is a dish made from chicken marinated...",
     "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Chicken", "Yogurt", "Spices"],
-    "category": "Starter"
+    "ingredients": [
+      { "name": "Chicken", "quantity": "500g" },
+      { "name": "Yogurt", "quantity": "100g" },
+      { "name": "Spices", "quantity": "50g" }
+    ],
+    "category": "Starter",
+    "serves": 1
+  },
+   {
+    "id": 14,
+    "name": "Tandoori Chicken",
+    "type": "non-veg",
+    "description": "Tandoori chicken is a dish made from chicken marinated...",
+    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
+    "ingredients": [
+      { "name": "Chicken", "quantity": "500g" },
+      { "name": "Yogurt", "quantity": "100g" },
+      { "name": "Spices", "quantity": "50g" }
+    ],
+    "category": "Starter",
+    "serves": 2
+  }, {
+    "id": 13,
+    "name": "Tandoori Chicken",
+    "type": "non-veg",
+    "description": "Tandoori chicken is a dish made from chicken marinated...",
+    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
+    "ingredients": [
+      { "name": "Chicken", "quantity": "500g" },
+      { "name": "Yogurt", "quantity": "100g" },
+      { "name": "Spices", "quantity": "50g" }
+    ],
+    "category": "Starter",
+    "serves": 2
+  }, {
+    "id": 12,
+    "name": "Tandoori Chicken",
+    "type": "non-veg",
+    "description": "Tandoori chicken is a dish made from chicken marinated...",
+    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
+    "ingredients": [
+      { "name": "Chicken", "quantity": "500g" },
+      { "name": "Yogurt", "quantity": "100g" },
+      { "name": "Spices", "quantity": "50g" }
+    ],
+    "category": "Starter",
+    "serves": 2
+  }, {
+    "id": 11,
+    "name": "Tandoori Chicken",
+    "type": "non-veg",
+    "description": "Tandoori chicken is a dish made from chicken marinated...",
+    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
+    "ingredients": [
+      { "name": "Chicken", "quantity": "500g" },
+      { "name": "Yogurt", "quantity": "100g" },
+      { "name": "Spices", "quantity": "50g" }
+    ],
+    "category": "Starter",
+    "serves": 2
   },
   {
     "id": 2,
@@ -14,8 +72,13 @@
     "type": "veg",
     "description": "Dal makhani is an Indian dish originating from Punjab...",
     "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Black lentils", "Cream", "Butter"],
-    "category": "Main Course"
+    "ingredients": [
+      { "name": "Black lentils", "quantity": "200g" },
+      { "name": "Cream", "quantity": "50ml" },
+      { "name": "Butter", "quantity": "2 tbsp" }
+    ],
+    "category": "Main Course",
+    "serves": 2
   },
   {
     "id": 3,
@@ -23,160 +86,213 @@
     "type": "veg",
     "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
     "image": "https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
-    "ingredients": ["Paneer - 200g", "Onions - 1 cup", "Capsicum - 1 cup", "Tomato Gravy - 100ml", "Spices"],
-    "category": "Main Course"
+    "ingredients": [
+      { "name": "Paneer", "quantity": "200g" },
+      { "name": "Onions", "quantity": "1 cup" },
+      { "name": "Capsicum", "quantity": "1 cup" },
+      { "name": "Tomato Gravy", "quantity": "100ml" },
+      { "name": "Spices", "quantity": "to taste" }
+    ],
+    "category": "Main Course",
+    "serves": 2
   },
   {
-    "id": 4,
-    "name": "Paneer Butter Masala",
+    "id": 21,
+    "name": "Gulab Jamun",
     "type": "veg",
-    "description": "Paneer butter masala is a popular Indian dish made with paneer...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Paneer", "Butter", "Tomato Gravy"],
-    "category": "Main Course"
+    "description": "Soft milk-solid balls soaked in rose-flavored sugar syrup.",
+    "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/01/gulab-jamun-recipe.jpg",
+    "ingredients": [
+      { "name": "Khoya", "quantity": "200g" },
+      { "name": "Sugar Syrup", "quantity": "1 cup" },
+      { "name": "Rose Water", "quantity": "1 tsp" }
+    ],
+    "category": "Dessert",
+    "serves": 2
   },
   {
-    "id": 5,
-    "name": "Chicken Biryani",
-    "type": "non-veg",
-    "description": "Chicken biryani is a flavorful rice dish made with chicken...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Chicken", "Basmati Rice", "Spices"],
-    "category": "Main Course"
-  },
-  {
-    "id": 6,
-    "name": "Vegetable Biryani",
+    "id": 22,
+    "name": "Rasmalai",
     "type": "veg",
-    "description": "Vegetable biryani is a fragrant rice dish made with mixed vegetables...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Mixed Vegetables", "Basmati Rice", "Spices"],
-    "category": "Main Course"
+    "description": "Soft paneer balls soaked in saffron flavored milk.",
+    "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/06/rasmalai.jpg",
+    "ingredients": [
+      { "name": "Paneer", "quantity": "150g" },
+      { "name": "Milk", "quantity": "500ml" },
+      { "name": "Sugar", "quantity": "50g" }
+    ],
+    "category": "Dessert",
+    "serves": 2
+  },
+
+  {
+    "id": 23,
+    "name": "Mango Lassi",
+    "type": "veg",
+    "description": "Sweet mango yogurt smoothie.",
+    "image": "https://www.cookwithmanali.com/wp-content/uploads/2017/05/Mango-Lassi-500x500.jpg",
+    "ingredients": [
+      { "name": "Mango Pulp", "quantity": "1 cup" },
+      { "name": "Yogurt", "quantity": "1 cup" },
+      { "name": "Sugar", "quantity": "2 tbsp" }
+    ],
+    "category": "Beverage",
+    "serves": 2
   },
   {
-    "id": 7,
+    "id": 24,
+    "name": "Masala Chai",
+    "type": "veg",
+    "description": "Indian-style spiced tea with milk.",
+    "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/10/masala-chai-recipe.jpg",
+    "ingredients": [
+      { "name": "Tea Leaves", "quantity": "2 tsp" },
+      { "name": "Milk", "quantity": "1 cup" },
+      { "name": "Spices", "quantity": "to taste" }
+    ],
+    "category": "Beverage",
+    "serves": 2
+  },
+
+
+  {
+    "id": 25,
+    "name": "Papad with Pickle",
+    "type": "veg",
+    "description": "Crispy roasted papad served with mixed Indian pickle.",
+    "image": "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Riya_Vashisht/Roasted_Papad.jpg",
+    "ingredients": [
+      { "name": "Papad", "quantity": "2 pcs" },
+      { "name": "Pickle", "quantity": "2 tsp" }
+    ],
+    "category": "Other",
+    "serves": 2
+  },
+  {
+    "id": 26,
+    "name": "Green Salad",
+    "type": "veg",
+    "description": "Fresh cut veggies tossed with lemon juice and salt.",
+    "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/green-salad.jpg",
+    "ingredients": [
+      { "name": "Cucumber", "quantity": "1" },
+      { "name": "Tomato", "quantity": "1" },
+      { "name": "Onion", "quantity": "1" },
+      { "name": "Lemon Juice", "quantity": "1 tbsp" }
+    ],
+    "category": "Other",
+    "serves": 2
+  },
+  {
+    "id": 27,
     "name": "Paneer Tikka",
     "type": "veg",
-    "description": "Paneer tikka is a popular Indian appetizer made with marinated paneer...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Paneer", "Yogurt", "Spices"],
-    "category": "Starter"
+    "description": "Grilled paneer cubes marinated in spices and yogurt.",
+    "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/paneer-tikka-recipe.jpg",
+    "ingredients": [
+      { "name": "Paneer", "quantity": "200g" },
+      { "name": "Yogurt", "quantity": "100g" },
+      { "name": "Spices", "quantity": "to taste" }
+    ],
+    "category": "Starter",
+    "serves": 2
   },
   {
-    "id": 8,
-    "name": "Butter Chicken",
-    "type": "non-veg",
-    "description": "Butter chicken is a rich and creamy Indian dish made with chicken...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Chicken", "Butter", "Tomato Gravy"],
-    "category": "Main Course"
-  },
-  {
-    "id": 9,
+    "id": 28,
     "name": "Chole Bhature",
     "type": "veg",
-    "description": "Chole bhature is a popular North Indian dish consisting of spicy chickpeas...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Chickpeas", "Flour", "Spices"],
-    "category": "Main Course"
+    "description": "Spicy chickpeas served with deep-fried bread.",
+    "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/chole-bhature-recipe.jpg",
+    "ingredients": [
+      { "name": "Chickpeas", "quantity": "200g" },
+      { "name": "Flour", "quantity": "200g" },
+      { "name": "Spices", "quantity": "to taste" }
+    ],
+    "category": "Main Course",
+    "serves": 2
   },
   {
-    "id": 10,
-    "name": "Palak Paneer",
+    "id": 29,
+    "name": "Biryani",
+    "type": "non-veg",
+    "description": "Fragrant rice dish with marinated meat and spices.",
+    "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/biryani-recipe.jpg",
+    "ingredients": [
+      { "name": "Basmati Rice", "quantity": "200g" },
+      { "name": "Chicken", "quantity": "300g" },
+      { "name": "Spices", "quantity": "to taste" }
+    ],
+    "category": "Main Course",
+    "serves": 2
+  },
+  {
+    "id": 30,
+    "name": "Butter Chicken",
+    "type": "non-veg",
+    "description": "Creamy tomato-based curry with tender chicken pieces.",
+    "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/butter-chicken-recipe.jpg",
+    "ingredients": [
+      { "name": "Chicken", "quantity": "300g" },
+      { "name": "Tomato Puree", "quantity": "200ml" },
+      { "name": "Cream", "quantity": "50ml" }
+    ],
+    "category": "Main Course",
+    "serves": 2
+  },
+  {
+    "id": 31,
+    "name": "Paneer Butter Masala",
     "type": "veg",
-    "description": "Palak paneer is a classic Indian dish made with spinach and paneer...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Spinach", "Paneer", "Spices"],
-    "category": "Main Course"
+    "description": "Paneer cubes in a rich and creamy tomato gravy.",
+    "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/paneer-butter-masala-recipe.jpg",
+    "ingredients": [
+      { "name": "Paneer", "quantity": "200g" },
+      { "name": "Tomato Puree", "quantity": "200ml" },
+      { "name": "Cream", "quantity": "50ml" }
+    ],
+    "category": "Main Course",
+    "serves": 2
   },
   {
-    "id": 11,
+    "id": 32,
+    "name": "Vegetable Biryani",
+    "type": "veg",
+    "description": "Aromatic rice dish with mixed vegetables and spices.",
+    "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/vegetable-biryani-recipe.jpg",
+    "ingredients": [
+      { "name": "Basmati Rice", "quantity": "200g" },
+      { "name": "Mixed Vegetables", "quantity": "200g" },
+      { "name": "Spices", "quantity": "to taste" }
+    ],
+    "category": "Main Course",
+    "serves": 2
+  },
+  {
+    "id": 33,
     "name": "Fish Curry",
     "type": "non-veg",
-    "description": "Fish curry is a flavorful dish made with fish cooked in a spicy gravy...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Fish", "Coconut Milk", "Spices"],
-    "category": "Main Course"
+    "description": "Spicy fish curry made with coconut milk and spices.",
+    "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/fish-curry-recipe.jpg",
+    "ingredients": [
+      { "name": "Fish", "quantity": "300g" },
+      { "name": "Coconut Milk", "quantity": "200ml" },
+      { "name": "Spices", "quantity": "to taste" }
+    ],
+    "category": "Main Course",
+    "serves": 2
   },
   {
-    "id": 12,
-    "name": "Aloo Gobi",
-    "type": "veg",
-    "description": "Aloo gobi is a simple and delicious Indian dish made with potatoes and cauliflower...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Potatoes", "Cauliflower", "Spices"],
-    "category": "Main Course"
-  },
-  {
-    "id": 13,
-    "name": "Mutton Rogan Josh",
+    "id": 34,
+    "name": "Prawn Masala",
     "type": "non-veg",
-    "description": "Mutton rogan josh is a traditional Kashmiri dish made with tender mutton...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Mutton", "Yogurt", "Spices"],
-    "category": "Main Course"
-  },
-  {
-    "id": 14,
-    "name": "Paneer Tikka Masala",
-    "type": "veg",
-    "description": "Paneer tikka masala is a rich and creamy dish made with marinated paneer...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Paneer", "Tomato Gravy", "Spices"],
-    "category": "Main Course"
-  },
-  {
-    "id": 15,
-    "name": "Egg Curry",
-    "type": "non-veg",
-    "description": "Egg curry is a simple and flavorful dish made with boiled eggs in a spicy gravy...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Eggs", "Tomato Gravy", "Spices"],
-    "category": "Main Course"
-  },
-  {
-    "id": 16,
-    "name": "Vegetable Pulao",
-    "type": "veg",
-    "description": "Vegetable pulao is a fragrant rice dish made with mixed vegetables and spices...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Mixed Vegetables", "Basmati Rice", "Spices"],
-    "category": "Main Course"
-  },
-  {
-    "id": 17,
-    "name": "Paneer Bhurji",
-    "type": "veg",
-    "description": "Paneer bhurji is a quick and easy dish made with crumbled paneer...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Paneer", "Onions", "Spices"],
-    "category": "Main Course"
-  },
-  {
-    "id": 18,
-    "name": "Chicken Korma",
-    "type": "non-veg",
-    "description": "Chicken korma is a rich and creamy dish made with chicken cooked in a yogurt-based gravy...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Chicken", "Yogurt", "Spices"],
-    "category": "Main Course"
-  },
-  {
-    "id": 19,
-    "name": "Rajma",
-    "type": "veg",
-    "description": "Rajma is a North Indian dish made with kidney beans cooked in a spicy gravy...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Kidney Beans", "Tomato Gravy", "Spices"],
-    "category": "Main Course"
-  },
-  {
-    "id": 20,
-    "name": "Methi Chicken",
-    "type": "non-veg",
-    "description": "Methi chicken is a flavorful dish made with chicken cooked with fenugreek leaves...",
-    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
-    "ingredients": ["Chicken", "Fenugreek Leaves", "Spices"],
-    "category": "Main Course"
+    "description": "Spicy prawn curry with a rich tomato gravy.",
+    "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/prawn-masala-recipe.jpg",
+    "ingredients": [
+      { "name": "Prawns", "quantity": "300g" },
+      { "name": "Tomato Puree", "quantity": "200ml" },
+      { "name": "Spices", "quantity": "to taste" }
+    ],
+    "category": "Main Course",
+    "serves": 2
   }
 ]
