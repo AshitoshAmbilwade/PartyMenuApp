@@ -1,12 +1,21 @@
 'use dom';
 import '../../global.css'; // adjust path based on your structure
+import Header from '../components/Header';
+import { useState } from 'react';
+import DishList from './DishList';
 
 export default function HomeScreen() {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-100">
-      <p className="text-2xl font-semibold text-blue-500">
-        Welcome to the Party Menu App 🎉
-      </p>
+    <div className="w-screen bg-gray-50 min-h-screen">
+      <Header
+        selectedCategory={selectedCategory}
+        onCategoryChange={setSelectedCategory}
+      />
+      {/* DishList will go here */}
+      <DishList/>
     </div>
   );
 }
+

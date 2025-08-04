@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Tandoori Chicken",
+    "type": "non-veg",
+    "description": "Tandoori chicken is a dish made from chicken marinated...",
+    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
+    "ingredients": ["Chicken", "Yogurt", "Spices"]
+  },
+  {
+    "id": 2,
+    "name": "Dal Makhni",
+    "type": "veg",
+    "description": "Dal makhani is an Indian dish originating from Punjab...",
+    "image": "https://foodiewish.com/wp-content/uploads/2020/05/Tandoori-Chicken-Recipe.jpg",
+    "ingredients": ["Black lentils", "Cream", "Butter"]
+  }
+]
