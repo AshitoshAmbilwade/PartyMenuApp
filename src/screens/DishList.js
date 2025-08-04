@@ -5,12 +5,14 @@ import dishes from '../data/dishes.json';
 import DishCard from '../components/DishCard';
 import CategoryTabs from '../components/Header/CategoryTabs';
 import SubHeadingFilter from '../components/Header/SubHeadingFilter';
+import SearchBar from '../components/Header/SearchBar'; // ✅ Import SearchBar
 
 export default function DishList() {
   const [selected, setSelected] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('Starter');
   const [showVeg, setShowVeg] = useState(true);
   const [showNonVeg, setShowNonVeg] = useState(true);
+  const [searchQuery, setSearchQuery] = useState(''); // ✅ Add state
 
   const toggleSelect = (id) => {
     setSelected((prev) =>
@@ -31,9 +33,17 @@ export default function DishList() {
     return true;
   });
 
+  // ✅ Step 3: Filter by search query
+  filteredDishes = filteredDishes.filter((dish) =>
+    dish.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="pb-28 px-4">
       <h1 className="text-2xl font-bold mt-4">Party Menu</h1>
+
+      {/* ✅ Search Input */}
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
 
       {/* Category Tabs */}
       <CategoryTabs

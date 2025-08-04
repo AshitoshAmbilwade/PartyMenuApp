@@ -1,9 +1,8 @@
-"use dom"
+"use dom";
 import '../../../global.css';
-
 import React from 'react';
 
-export default function SearchBar() {
+export default function SearchBar({ searchQuery, setSearchQuery }) {
   return (
     <div className="w-full px-4 mt-2">
       <div className="flex items-center bg-white border border-gray-300 rounded-full px-4 py-2 shadow-sm">
@@ -11,6 +10,8 @@ export default function SearchBar() {
           type="text"
           placeholder="Search dish for your party......"
           className="flex-1 outline-none bg-transparent text-sm"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
         />
         <svg
           xmlns="http://www.w3.org/2000/svg"
