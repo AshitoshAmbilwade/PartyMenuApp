@@ -12,12 +12,6 @@ export default function Header() {
 
       {/* Search Bar */}
       <SearchBar />
-
-      {/*CategoryTabs.jsx  */}
-      <CategoryTabs/>
-
-      {/* SubHeadingFilter */}
-      <SubHeadingFilter/>
     </div>
   );
 }

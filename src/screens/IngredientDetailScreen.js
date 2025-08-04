@@ -6,6 +6,15 @@ export default function IngredientDetailScreen({ route }) {
 
   return (
     <div className="p-5 bg-white min-h-screen">
+      {/* Dish Image */}
+      <div className="mb-4">
+        <img
+          src={dish.image}
+          alt={dish.name}
+          className="w-full h-64 object-cover rounded-lg shadow-md"
+        />
+      </div>
+
       {/* Dish Title */}
       <h1 className="text-2xl font-bold mb-1">{dish.name}</h1>
 
