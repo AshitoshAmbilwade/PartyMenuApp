@@ -14,7 +14,7 @@ export default function SubHeadingFilter({
       <h2 className="text-sm font-semibold text-gray-700">
         {category} Selected ({selectedCount})
       </h2>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 mb-2">
         <button
           onClick={() => setShowVeg(!showVeg)}
           className={`text-sm px-2 py-1 rounded-full border ${

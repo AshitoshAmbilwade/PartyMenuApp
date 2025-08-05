@@ -3,7 +3,7 @@ import '../../global.css';
 import IngredientList from './IngredientList';
 import { useNavigation } from '@react-navigation/native';
 
-export default function DishCard({ dish, isSelected, onToggleSelect }) {
+export default function DishCard({ dish, quantity = 0, onQuantityChange }) {
   const navigation = useNavigation();
 
   return (
@@ -20,7 +20,6 @@ export default function DishCard({ dish, isSelected, onToggleSelect }) {
 
         <p className="text-gray-600 text-sm mt-1 line-clamp-2">{dish.description}</p>
 
-        {/* 👇 Ingredient button navigates to new screen */}
         <button
           className="text-orange-500 text-sm mt-1 hover:underline"
           onClick={() => navigation.navigate('IngredientDetail', { dish })}
@@ -35,16 +34,32 @@ export default function DishCard({ dish, isSelected, onToggleSelect }) {
           alt={dish.name}
           className="w-16 h-16 object-cover rounded-md mb-2"
         />
-        <button
-          onClick={() => onToggleSelect(dish.id)}
-          className={`text-sm px-3 py-1 rounded-full font-medium ${
-            isSelected
-              ? 'bg-orange-100 text-orange-600 border border-orange-400'
-              : 'bg-green-100 text-green-600 border border-green-400'
-          }`}
-        >
-          {isSelected ? 'Remove' : 'Add +'}
-        </button>
+
+        {/* Counter UI */}
+        {quantity > 0 ? (
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => onQuantityChange(dish.id, quantity - 1)}
+              className="px-2 bg-gray-200 rounded-full"
+            >
+              ➖
+            </button>
+            <span className="text-sm font-medium">{quantity}</span>
+            <button
+              onClick={() => onQuantityChange(dish.id, quantity + 1)}
+              className="px-2 bg-gray-200 rounded-full"
+            >
+              ➕
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={() => onQuantityChange(dish.id, 1)}
+            className="text-sm px-3 py-1 rounded-full font-medium bg-green-100 text-green-600 border border-green-400"
+          >
+            Add +
+          </button>
+        )}
       </div>
     </div>
   );
