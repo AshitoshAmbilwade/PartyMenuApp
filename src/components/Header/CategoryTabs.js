@@ -5,25 +5,33 @@ const categories = ['All', 'Starter', 'Main Course', 'Dessert', 'Beverage', 'Oth
 
 export default function CategoryTabs({ selectedCategory, setSelectedCategory, selectedCountMap }) {
   return (
-    <div className="flex overflow-x-auto space-x-4 mt-4">
-      {categories.map((cat) => (
-        <button
-          key={cat}
-          onClick={() => setSelectedCategory(cat)}
-          className={`relative px-4 py-2 rounded-full border whitespace-nowrap ${
-            selectedCategory === cat
-              ? 'bg-black text-white border-black'
-              : 'bg-white text-black border-gray-300'
-          }`}
-        >
-          {cat}
-          {selectedCountMap?.[cat] > 0 && (
-            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">
-              {selectedCountMap[cat]}
-            </span>
-          )}
-        </button>
-      ))}
+    <div className="flex overflow-x-auto pb-2 mt-4 hide-scrollbar">
+      <div className="flex space-x-2 pl-4">
+        {categories.map((cat) => (
+          <div key={cat} className="relative">
+            <button
+              onClick={() => setSelectedCategory(cat)}
+              className={`px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap ${
+                selectedCategory === cat
+                  ? 'bg-black text-white shadow-sm'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              }`}
+            >
+              {cat}
+            </button>
+            
+            {selectedCountMap?.[cat] > 0 && (
+              <span className={`absolute -top-1 -right-1 text-xs w-5 h-5 flex items-center justify-center rounded-full ${
+                selectedCategory === cat 
+                  ? 'bg-white text-black border border-gray-200' 
+                  : 'bg-red-500 text-white'
+              }`}>
+                {selectedCountMap[cat]}
+              </span>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
