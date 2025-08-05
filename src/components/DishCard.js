@@ -1,6 +1,5 @@
 'use dom';
 import '../../global.css';
-import IngredientList from './IngredientList';
 import { useNavigation } from '@react-navigation/native';
 
 export default function DishCard({ dish, quantity = 0, onQuantityChange }) {

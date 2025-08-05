@@ -12,7 +12,7 @@ export default function DishList() {
   const [showVeg, setShowVeg] = useState(true);
   const [showNonVeg, setShowNonVeg] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
-  const [cart, setCart] = useState({}); // dishId: quantity
+  const [cart, setCart] = useState({});
 
   const onQuantityChange = (id, quantity) => {
     setCart((prev) => {
@@ -24,6 +24,7 @@ export default function DishList() {
   };
 
   const selectedDishes = dishes.filter((d) => cart[d.id]);
+
   const selectedCountMap = selectedDishes.reduce((acc, dish) => {
     const cat = dish.category || 'Other';
     acc[cat] = (acc[cat] || 0) + 1;
@@ -47,8 +48,6 @@ export default function DishList() {
 
   return (
     <div className="pb-28 px-4">
-      <h1 className="text-2xl font-bold mt-4">Party Menu</h1>
-
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
 
       <CategoryTabs
